@@ -91,11 +91,21 @@ const mixPlayers = () => {
         rowsWithPlayers[i].parentNode.replaceChild(createRow, rowsWithPlayers[i]);
         i != rand && rowsWithPlayers[rand].parentNode.replaceChild(rowsWithPlayers[i], rowsWithPlayers[rand]);
         createRow.parentNode.replaceChild(rowsWithPlayers[rand], createRow);
+		
     }
+
+
+
+	console.log(rowsWithPlayers);
 }
 const callMixPlayers = () => {
-	let timerId = setInterval(() => mixPlayers(), 400);
-	setTimeout(() => { clearInterval(timerId); }, 3800);
+	let timerId = setInterval(() => mixPlayers(), 200);
+
+	let allTimeMix = Math.floor((Math.random() * 10000)/2);
+
+	setTimeout(() => { clearInterval(timerId); }, allTimeMix);
+
+	console.log(allTimeMix);
 }
 
 
