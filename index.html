@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CHIPS</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<div class="container">
+
+
+		<div class="buttons">
+			<div class="header"></div>
+			<!-- <div class="buttons__main"></div> -->
+			<input class="right mix" type="button" value="перемешать">
+			<input class="right in" type="button" value="добавить игрока">	
+			<input type="button" value="$" class="right sum-update">	
+				
+		</div>
+		<div class="money">
+			<input class="sum" value="">
+			<input class="money__in" type="number" min="0" max="5000">
+			<div class="money__total"></div>
+		</div>
+		<div id="playlist-namecolumn">
+			<div class='unit r1'>игрок</div>
+			<div class='unit r2'>buy-in</div>
+			<div class='unit r3'>rebuy</div>
+			<div class='unit r4'></div>
+			<div class='unit r5'></div>
+		</div>		
+		<div id="playlist">
+		</div>
+
+	<!-- <button class="clean" onclick="delall(); return false;">Удалить все</button> -->
+		<footer class="footer">
+			<div class="footer__right">
+				<button class="b1 btn-calc">calc</button>
+				<div class="result"></div>
+			</div>
+
+		</footer>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

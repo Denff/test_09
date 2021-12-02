@@ -1,0 +1,57 @@
+.header {
+    padding: 0 20px;
+    color: #333333;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 4px 1px 4px rgba(255, 255, 255, 0.8);
+    flex: 1;
+}
+
+.buttons {
+    
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    background: #cccaaa;
+    border: 3px solid #b5bdc8;
+    
+    &__main {
+        display: flex;
+        flex-flow: colunm;
+    }
+}
+
+.right {
+    color: rgba(255, 255, 255, 1);
+    background: #12233a;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.in {
+    color: rgba(255, 255, 255, 1);
+    width: 170px;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    background: #12233a;
+    border-left: 1px solid #cccaaa;
+    border-right: 1px solid #cccaaa;
+    transition: all 0.5s;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        background: #578803;
+    }
+}
+
+.mix {
+    letter-spacing: 1.5px;
+}

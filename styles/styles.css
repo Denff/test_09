@@ -1,0 +1,357 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial;
+  background-color: #def5f3;
+}
+
+.container {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+p {
+  margin: 7px 0;
+}
+
+.footer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 200px;
+}
+
+.b1 {
+  color: rgba(255, 255, 255, 0.6);
+  background: #b5bdc8;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+}
+
+.b1:hover {
+  color: white;
+}
+
+.result {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  height: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  background: #b5bdc8;
+  margin-bottom: 2px;
+}
+
+.player > div {
+  margin: 0;
+  padding: 0 20px;
+  height: 30px;
+}
+
+.player input {
+  padding: 0 15px 2px;
+  width: 100%;
+  height: 24px;
+  font-size: 17px;
+  font-weight: 400;
+  display: inline-block;
+  background: #eeeeee;
+  border: 1px solid rgba(0, 0, 140, 0.3);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 0;
+  outline: none;
+}
+
+.player input:hover {
+  cursor: pointer;
+  background: #daeedb;
+}
+
+.player input:focus {
+  border-radius: 0;
+}
+
+.header {
+  padding: 0 20px;
+  color: #333333;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 4px 1px 4px rgba(255, 255, 255, 0.8);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.buttons {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background: #cccaaa;
+  border: 3px solid #b5bdc8;
+}
+
+.buttons__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: colunm;
+          flex-flow: colunm;
+}
+
+.right {
+  color: white;
+  background: #12233a;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+}
+
+.right:hover {
+  color: white;
+}
+
+.in {
+  color: white;
+  width: 170px;
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  background: #12233a;
+  border-left: 1px solid #cccaaa;
+  border-right: 1px solid #cccaaa;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.in:hover {
+  color: white;
+  background: #578803;
+}
+
+.mix {
+  letter-spacing: 1.5px;
+}
+
+#playlist {
+  border-collapse: collapse;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.d-butts {
+  padding: 0;
+}
+
+.d-butts button {
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  -webkit-transition: all .3s ease 0.2s;
+  transition: all .3s ease 0.2s;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.d-butts button:hover {
+  color: white;
+  background: #f85032;
+}
+
+.name {
+  width: 300px;
+}
+
+.buyin-check {
+  width: 80px;
+}
+
+.buyin-check input {
+  width: 80px;
+}
+
+.rebuy-count {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 80px;
+}
+
+.rebuy-count input {
+  width: 80px;
+}
+
+.addon-count {
+  width: 10px;
+}
+
+.delete button {
+  background-color: #b5bdc8;
+  border: none;
+  color: #dd9889;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.delete button:hover {
+  color: #f85032;
+  font-weight: 700;
+  background: #6b6362;
+}
+
+td input[type="number"] {
+  padding-right: 0;
+}
+
+#playlist-namecolumn {
+  color: #fdfdfd;
+  max-width: 100%;
+  margin-bottom: 4px;
+}
+
+.r1 {
+  width: 300px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.r2 {
+  width: 120px;
+  text-align: center;
+}
+
+.r3 {
+  width: 120px;
+}
+
+.r4 {
+  width: 10px;
+}
+
+.r5 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: right;
+  padding: 5px 16px !important;
+}
+
+#playlist-namecolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.unit {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 5px 20px;
+  color: #000000;
+}
+
+#playlist-namecolumn {
+  background: #b5bdc8;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sum {
+  width: 100px;
+  color: #28343b;
+}
+
+.money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #a1d54f;
+  padding: 10px 20px;
+}
+
+input,
+button {
+  cursor: pointer;
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */
