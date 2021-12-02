@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>CHIPS</title>
@@ -10,18 +10,14 @@
 
 
 		<div class="buttons">
-			<div class="header"></div>
+			<div class="header">game kolxoz</div>
 			<!-- <div class="buttons__main"></div> -->
 			<input class="right mix" type="button" value="перемешать">
 			<input class="right in" type="button" value="добавить игрока">	
-			<input type="button" value="$" class="right sum-update">	
+			<input type="button" value="count I" class="right sum-update">	
 				
 		</div>
-		<div class="money">
-			<input class="sum" value="">
-			<input class="money__in" type="number" min="0" max="5000">
-			<div class="money__total"></div>
-		</div>
+
 		<div id="playlist-namecolumn">
 			<div class='unit r1'>игрок</div>
 			<div class='unit r2'>buy-in</div>
@@ -35,7 +31,18 @@
 	<!-- <button class="clean" onclick="delall(); return false;">Удалить все</button> -->
 		<footer class="footer">
 			<div class="footer__right">
-				<button class="b1 btn-calc">calc</button>
+				<div class="money">
+					<div class="field">
+						<label for="">количество взносов</label>
+						<input class="sum" value="">
+					</div>
+					<div class="field">
+						<label for="">один взнос</label>
+						<input class="money__in" type="number" min="0" max="5000">
+					</div>
+					<!-- <div class="money__total"></div> -->
+				</div>
+				<button class="b1 btn-calc">count II</button>
 				<div class="result"></div>
 			</div>
 

@@ -30,7 +30,9 @@ const createButton = (elem, text, attrVal) => {
 }
 
 
-
+const random = (min, max) => {
+	return min + Math.random() * (max - min);
+}
 
 
 const addNewPlayer = () => {
@@ -56,7 +58,17 @@ const addNewPlayer = () => {
 	buttoncell.appendChild(buttonHide);
 	buttonDel.appendChild(buttonDelete)
 
+	let colorR = random(40, 180);
+	let colorG = random(60, 180);
+	let colorB = random(0, 180);
+
+	// $(".div").css("backgroundColor", "rgb(" + red + "," + green + "," + blue + ")" );
+
+	player.style = "background-color: " + 
+		"rgba(" + colorR + "," + colorG + "," + colorB + "," + 0.3 + ")";
+
 	playlistTable.appendChild(player);
+
 }
 
 const deleteRow = row => {
@@ -95,13 +107,15 @@ const mixPlayers = () => {
     }
 
 
+	console.log();
+	console.log(rowsWithPlayers.length);
 
-	console.log(rowsWithPlayers);
 }
+
 const callMixPlayers = () => {
 	let timerId = setInterval(() => mixPlayers(), 200);
 
-	let allTimeMix = Math.floor((Math.random() * 10000)/2);
+	let allTimeMix = Math.floor(random(1000, 3000));
 
 	setTimeout(() => { clearInterval(timerId); }, allTimeMix);
 

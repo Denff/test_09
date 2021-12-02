@@ -1,6 +1,6 @@
 #playlist {
     border-collapse: collapse;
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .delete button {
-    background-color: #b5bdc8;
+    background-color: transparent;
     border: none;
     color: #dd9889;
     width: 100%;
@@ -66,7 +66,7 @@
     &:hover {
         color: #f85032;
         font-weight: 700;
-        background: #6b6362;
+        // background: #6b6362;
     }
 }
 

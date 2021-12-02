@@ -1,14 +1,18 @@
 .player {
     display: flex;
     flex-flow: row nowrap;
-
-    height: 32px;
+    // border: 2px solid transparent;
+    height: 34px;
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
-    background: #b5bdc8;
-    margin-bottom: 2px;
+    background: #c6c9cc;
+    margin-bottom: 5px;
+    transition: all 0.5s;
     
+}
+.player.mgBottom {
+    margin-bottom: 10px;
 }
 .player > div {
     margin: 0;
@@ -25,9 +29,7 @@
             font-size: 17px;
             font-weight: 400;
             display: inline-block;
-            // box-shadow: inset 4px 4px 7px rgba(0, 0, 140, 0.1), inset -4px -4px 7px rgba(0, 0, 140, 0.1);
             background: #eeeeee;
-            border: 1px solid rgba(0, 0, 140, 0.3);
             transition: all 0.4s;
             border-radius: 0;
             outline: none;

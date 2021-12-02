@@ -6,6 +6,7 @@
 body {
   font-family: 'Roboto', Arial;
   background-color: #def5f3;
+  color: #000;
 }
 
 .container {
@@ -82,7 +83,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  height: 32px;
+  height: 34px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -90,8 +91,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background: #ffffff;
-  background: #b5bdc8;
-  margin-bottom: 2px;
+  background: #c6c9cc;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.player.mgBottom {
+  margin-bottom: 10px;
 }
 
 .player > div {
@@ -108,7 +115,6 @@ p {
   font-weight: 400;
   display: inline-block;
   background: #eeeeee;
-  border: 1px solid rgba(0, 0, 140, 0.3);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border-radius: 0;
@@ -131,9 +137,9 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 4px 1px 4px rgba(255, 255, 255, 0.8);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .buttons {
@@ -161,6 +167,9 @@ p {
 }
 
 .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: white;
   background: #12233a;
   padding: 5px 15px;
@@ -178,7 +187,6 @@ p {
 
 .in {
   color: white;
-  width: 170px;
   font-size: 12px;
   letter-spacing: 1.1px;
   background: #12233a;
@@ -199,7 +207,7 @@ p {
 
 #playlist {
   border-collapse: collapse;
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -254,7 +262,7 @@ p {
 }
 
 .delete button {
-  background-color: #b5bdc8;
+  background-color: transparent;
   border: none;
   color: #dd9889;
   width: 100%;
@@ -266,7 +274,6 @@ p {
 .delete button:hover {
   color: #f85032;
   font-weight: 700;
-  background: #6b6362;
 }
 
 td input[type="number"] {
@@ -329,7 +336,6 @@ td input[type="number"] {
 }
 
 .sum {
-  width: 100px;
   color: #28343b;
 }
 
@@ -337,10 +343,10 @@ td input[type="number"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -349,9 +355,46 @@ td input[type="number"] {
   padding: 10px 20px;
 }
 
+.money label {
+  font-size: 10px;
+}
+
+.money input {
+  width: 90px;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
 input,
 button {
   cursor: pointer;
   outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 800px;
+  }
+  .player > div {
+    margin: 0;
+    padding: 0 10px;
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
