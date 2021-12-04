@@ -1,57 +1,23 @@
-.header {
-    padding: 0 20px;
-    color: #333333;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 4px 1px 4px rgba(255, 255, 255, 0.8);
-    flex: 2;
-}
-
 .buttons {
-    
-    padding: 10px 20px;
-    margin-bottom: 15px;
     display: flex;
-    flex-flow: row nowrap;
-    background: #cccaaa;
-    border: 3px solid #b5bdc8;
-    
-    &__main {
-        display: flex;
-        flex-flow: colunm;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    input {
+        width: 120px;
+        padding: 0 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px solid red;
+        background-color: rgba(246, 7, 7, 0.3);
+        height: 60px;
+        white-space: normal;
+
     }
 }
 
-.right {
-    flex: 1;
-    color: rgba(255, 255, 255, 1);
-    background: #12233a;
-    padding: 5px 15px;
-    font-size: 16px;
+.header {
+    font-size: 22px;
     font-weight: 700;
-    text-transform: uppercase;
-    transition: all 0.5s;
-    border: none;
-    &:hover {
-        color: rgba(255, 255, 255, 1);
-    }
-}
-
-.in {
-    color: rgba(255, 255, 255, 1);
-    font-size: 12px;
-    letter-spacing: 1.1px;
-    background: #12233a;
-    border-left: 1px solid #cccaaa;
-    border-right: 1px solid #cccaaa;
-    transition: all 0.5s;
-    &:hover {
-        color: rgba(255, 255, 255, 1);
-        background: #578803;
-    }
-}
-
-.mix {
-    letter-spacing: 1.5px;
 }

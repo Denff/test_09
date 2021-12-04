@@ -1,46 +1,37 @@
 .player {
     display: flex;
     flex-flow: row nowrap;
-    // border: 2px solid transparent;
-    height: 34px;
     justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    background: #c6c9cc;
-    margin-bottom: 5px;
-    transition: all 0.5s;
-    
-}
-.player.mgBottom {
-    margin-bottom: 10px;
-}
-.player > div {
-    margin: 0;
-    padding: 0 20px;
-    height: 30px;
+    padding: 10px;
 }
 
+.name {
+    flex: 3;
+}
 
-.player {
-        input {
-            padding: 0 15px 2px;
-            width: 100%;
-            height: 24px;
-            font-size: 17px;
-            font-weight: 400;
-            display: inline-block;
-            background: #eeeeee;
-            transition: all 0.4s;
-            border-radius: 0;
-            outline: none;
-    
-            &:hover {
-                cursor: pointer;
-                background: #daeedb;
-            }
-    
-            &:focus {
-                border-radius: 0;
-            }
-        }
+.buyin-check {
+    margin-right: 5px;
+    input {
+        width: 80px;
+    }
+}
+
+.rebuy-count {
+    flex: 1;
+    input {
+        width: 80px;
+    }
+}
+
+.d-butts {
+    margin-right: 10px;
+}
+
+.d-butts,
+.delete {
+    display: flex;
+    button {
+        border: none;
+        padding: 3px 10px;
+    }
 }
