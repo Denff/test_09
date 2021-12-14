@@ -22,3 +22,33 @@
         }
     }
 }
+
+
+.btn-calc,
+.sum-update {
+    color: white;
+    border: 3px solid rgb(10, 3, 3);
+    background-color: rgb(3, 206, 37);
+
+    &:hover {
+        background-color: rgb(2, 133, 8);
+    }
+}
+
+.btn-calc {
+    margin-left: 10px;
+}
+
+.money {
+    margin-bottom: 20px;
+    .field {
+        display: flex;
+        flex-flow: column;
+        
+    }
+}
+.counts {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}

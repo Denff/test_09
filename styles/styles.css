@@ -137,21 +137,34 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-bottom: 20px;
 }
 
+.buttons .header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5%;
+}
+
 .buttons input {
+  cursor: pointer;
+  margin-left: 5px;
   width: 120px;
   padding: 0 10px;
   color: white;
   font-size: 20px;
   font-weight: 700;
-  border: 1px solid red;
-  background-color: rgba(246, 7, 7, 0.3);
+  border: 3px solid #0a0303;
+  background-color: rgba(246, 7, 7, 0.8);
   height: 60px;
   white-space: normal;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.buttons input:hover {
+  background-color: #770202;
 }
 
 .header {
@@ -183,5 +196,48 @@ input {
 
 .name input:hover, .name input:focus {
   background: #ffffff;
+}
+
+.btn-calc,
+.sum-update {
+  color: white;
+  border: 3px solid #0a0303;
+  background-color: #03ce25;
+}
+
+.btn-calc:hover,
+.sum-update:hover {
+  background-color: #028508;
+}
+
+.btn-calc {
+  margin-left: 10px;
+}
+
+.money {
+  margin-bottom: 20px;
+}
+
+.money .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */
